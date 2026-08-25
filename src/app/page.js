@@ -32,17 +32,17 @@ export default function Home() {
 
               <div className="md:col-span-6 flex flex-col gap-4">
                 <a
-                  href="mailto:commissions@arthurtect.com"
-                  className="p-5 bg-[var(--color-surface)] border border-[var(--color-border)] hover:border-[var(--color-paper-muted)] transition-colors flex justify-between items-center min-h-[44px] group focus:outline-none focus:ring-1 focus:ring-[var(--color-paper)]"
+                  href="/commission"
+                  className="p-5 bg-[var(--color-surface)] border border-[var(--color-border)] hover:border-[var(--color-paper-muted)] transition-colors flex justify-between items-center min-h-[48px] group focus:outline-none focus:ring-1 focus:ring-[var(--color-paper)]"
                 >
                   <span className="text-sm font-mono text-[var(--color-paper)] group-hover:text-[var(--color-paper-muted)]">
-                    commissions@arthurtect.com
+                    Initiate Direct Commission Dialogue
                   </span>
                   <MetaText className="text-[var(--color-muted)]">&rarr;</MetaText>
                 </a>
                 <div className="p-4 bg-[var(--color-surface)] border border-[var(--color-border)] flex justify-between items-center text-xs text-[var(--color-muted)] font-mono">
-                  <span>PRESS & ARCHIVE</span>
-                  <span>press@arthurtect.com</span>
+                  <span>STUDIO ATELIERS</span>
+                  <span>London &bull; Zurich &bull; Tokyo</span>
                 </div>
               </div>
             </div>
