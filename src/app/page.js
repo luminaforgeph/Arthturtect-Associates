@@ -1,6 +1,6 @@
 import { Header } from "../components/Header";
 import { HeroSequence } from "../components/HeroSequence";
-import { FeaturedWorksTeaser } from "../components/FeaturedWorksTeaser";
+import { WorksGallery } from "../components/WorksGallery";
 import { Container } from "../components/Container";
 import { Heading, BodyText, MetaText } from "../components/Typography";
 
@@ -10,13 +10,13 @@ export default function Home() {
       <Header />
 
       <main className="flex-grow">
-        {/* Entry Phase 1: Architectural Hero Sequence */}
+        {/* Entry Sequence */}
         <HeroSequence />
 
-        {/* Entry Phase 2: First Spatial Transition into Curated Works */}
-        <FeaturedWorksTeaser />
+        {/* Full Architectural Works Monograph Experience */}
+        <WorksGallery />
 
-        {/* Entry Phase 3: Practice Signal & Studio Inquiries */}
+        {/* Practice Signal & Studio Inquiries */}
         <section id="contact" className="py-[var(--space-xl)] md:py-[var(--space-2xl)]">
           <Container size="2xl">
             <div className="grid grid-cols-1 md:grid-cols-12 gap-[var(--space-md)] items-start">
