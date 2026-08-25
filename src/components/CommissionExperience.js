@@ -225,7 +225,7 @@ export function CommissionForm() {
                           autoComplete="tel"
                           value={formData.phone}
                           onChange={handleChange}
-                          placeholder="+44 20 7946 0912"
+                          placeholder="+234 803 000 0000"
                           className="w-full bg-[#0a0a0a] border border-[#262624] p-3 text-xs sm:text-sm text-[#f5f5f2] focus:outline-none focus:border-[#f5f5f2] transition-colors"
                         />
                       </div>
@@ -241,7 +241,7 @@ export function CommissionForm() {
                           name="location"
                           value={formData.location}
                           onChange={handleChange}
-                          placeholder="e.g. Vals, Switzerland"
+                          placeholder="e.g. Port Harcourt, Nigeria"
                           className="w-full bg-[#0a0a0a] border border-[#262624] p-3 text-xs sm:text-sm text-[#f5f5f2] focus:outline-none focus:border-[#f5f5f2] transition-colors"
                         />
                       </div>

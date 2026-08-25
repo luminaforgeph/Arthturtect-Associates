@@ -17,16 +17,16 @@ export default function Home() {
         <WorksGallery />
 
         {/* Practice Signal & Studio Inquiries */}
-        <section id="contact" className="py-[var(--space-xl)] md:py-[var(--space-2xl)]">
+        <section id="contact" className="py-[var(--space-xl)] md:py-[var(--space-2xl)] border-t border-[var(--color-border)] bg-[#0a0a0a]">
           <Container size="2xl">
             <div className="grid grid-cols-1 md:grid-cols-12 gap-[var(--space-md)] items-start">
               <div className="md:col-span-6">
-                <MetaText className="block mb-[var(--space-3xs)]">COMMISSION & INQUIRIES</MetaText>
+                <MetaText className="block mb-[var(--space-3xs)]">PORT HARCOURT ATELIER • COMMISSION & INQUIRIES</MetaText>
                 <Heading level={2} className="mb-[var(--space-xs)]">
                   Initiate a Spatial Monograph
                 </Heading>
                 <BodyText className="max-w-md text-xs sm:text-sm">
-                  Arthurtect Associates accepts a limited number of civic, cultural, and private commissions annually to maintain tectonic quality and curatorial focus.
+                  Arthurtect Associates accepts a limited number of civic, cultural, and private commissions annually from our Port Harcourt studio to maintain tectonic quality and climatic rigor.
                 </BodyText>
               </div>
 
@@ -36,13 +36,12 @@ export default function Home() {
                   className="p-5 bg-[var(--color-surface)] border border-[var(--color-border)] hover:border-[var(--color-paper-muted)] transition-colors flex justify-between items-center min-h-[48px] group focus:outline-none focus:ring-1 focus:ring-[var(--color-paper)]"
                 >
                   <span className="text-sm font-mono text-[var(--color-paper)] group-hover:text-[var(--color-paper-muted)]">
-                    Initiate Direct Commission Dialogue
+                    Initiate Direct Commission Dialogue &rarr;
                   </span>
-                  <MetaText className="text-[var(--color-muted)]">&rarr;</MetaText>
                 </a>
-                <div className="p-4 bg-[var(--color-surface)] border border-[var(--color-border)] flex justify-between items-center text-xs text-[var(--color-muted)] font-mono">
-                  <span>STUDIO ATELIERS</span>
-                  <span>London &bull; Zurich &bull; Tokyo</span>
+                <div className="p-4 bg-[var(--color-surface)] border border-[var(--color-border)] flex flex-col sm:flex-row justify-between items-start sm:items-center gap-2 text-xs text-[var(--color-muted)] font-mono">
+                  <span>PORT HARCOURT STUDIO</span>
+                  <span>41 Trans-Amadi Industrial Layout Road</span>
                 </div>
               </div>
             </div>
@@ -54,13 +53,13 @@ export default function Home() {
       <footer className="border-t border-[var(--color-border)] py-[var(--space-md)] bg-[var(--color-void)]">
         <Container size="2xl">
           <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-[var(--space-xs)] text-xs text-[var(--color-muted)] font-mono">
-            <div>&copy; {new Date().getFullYear()} Arthurtect Associates. All rights reserved.</div>
+            <div>&copy; {new Date().getFullYear()} Arthurtect Associates Limited. Port Harcourt, Rivers State, Nigeria.</div>
             <div className="flex gap-4 tracking-wider uppercase">
-              <span>London</span>
+              <span>Port Harcourt</span>
               <span>&bull;</span>
-              <span>Zurich</span>
+              <span>Rivers State</span>
               <span>&bull;</span>
-              <span>Tokyo</span>
+              <span>Nigeria</span>
             </div>
           </div>
         </Container>

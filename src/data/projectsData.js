@@ -1,164 +1,163 @@
 export const projectsData = [
   {
     slug: "vervain-alpine-pavilion",
-    title: "Vervain Alpine Pavilion",
-    subtitle: "Subterranean Cultural Hall & Acoustics Observatory",
+    title: "Vervain Subterranean Pavilion",
+    subtitle: "Cultural Hall & Acoustic Spatial Monograph",
     typology: "Civic & Cultural",
-    location: "Vals, Switzerland",
-    year: "2025",
-    status: "Completed",
-    materials: "Valais Granite, Local Larch, Weathering Steel",
+    year: "2024",
+    location: "Port Harcourt Region, Nigeria",
+    status: "Architectural Study / Monograph",
     area: "1,850 m²",
-    aspectRatio: "aspect-[16/10]",
-    editorialScale: "full",
-    heroGradient: "from-[#171715] via-[#101010] to-[#0a0a09]",
-    description: "A subterranean cultural hall carved directly into the Valais granite cliffside, utilizing natural thermal mass and acoustic reverberation.",
-    longNarrative: "The Vervain Alpine Pavilion responds to the extreme topography of the Vals valley. Carved into granite, the structure maintains thermal balance throughout harsh Alpine winters while offering uninhibited views of the valley floor.",
-    architecturalIdea: "The fundamental concept centers on 'excavated acoustic volume.' Rather than erecting a building onto the landscape, space was hollowed out from the living bedrock, creating a natural acoustic shell for chamber performances.",
-    editorialInsight: "Subterranean architecture eliminates the distinction between structural enclosure and geographic terrain.",
-    specifications: [
-      { label: "Structural Framing", value: "Monolithic Cast Concrete & Bedrock Excavation" },
-      { label: "Acoustic Insulation", value: "Charred Larch Panels & Air Cavities" },
-      { label: "Thermal Rating", value: "Minergie-P Alpine Standard" },
-      { label: "Acoustic Reverberation", value: "1.85 Seconds (Chamber Music Calibration)" },
-    ],
+    leadArchitect: "Arthurtect Associates Design Atelier",
+    heroImage: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1600&q=80",
+    imageCaption: "Atmospheric study: Light well intersecting textured monolithic concrete envelope.",
+    disclaimer: "Curatorial Monograph Note: Architectural parameters, drawings, and high-contrast spatial photography represent conceptual monograph research in our Port Harcourt studio.",
+    overview:
+      "A subterranean acoustic space exploring monolithic concrete tectonics and filtered equatorial light shafts. Designed to anchor cultural gatherings while shielding interiors from intense tropical heat.",
+    architecturalIdea:
+      "By submerging three-quarters of the structural volume beneath ground level, the pavilion utilizes earth mass for natural thermal insulation. A central skylight canyon slices through the roof slab, casting moving sunlit beams across board-formed concrete surfaces throughout the day.",
+    editorialInsight:
+      "In tropical regional design, light is not merely illumination—it is weight and shadow. Vervain examines how deep overhangs and earth thermal mass create serene interior microclimates without heavy mechanical reliance.",
     galleryImages: [
       {
-        id: "img-01",
-        caption: "FIG 01.1 &mdash; EXCAVATED AUDITORIUM & GRANITE ACOUSTIC SHELL",
-        aspectRatio: "aspect-[16/10]",
-        gradient: "from-[#1c1b18] via-[#121210] to-[#080807]",
+        url: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80",
+        caption: "Acoustic concrete canyon & solar ray orientation.",
+        material: "Board-Formed Concrete / Earth Mass"
       },
       {
-        id: "img-02",
-        caption: "FIG 01.2 &mdash; CHARRED LARCH ACOUSTIC JOINERY & AIR CAVITY DETAIL",
-        aspectRatio: "aspect-[4/5]",
-        gradient: "from-[#181715] via-[#11100e] to-[#070706]",
+        url: "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1200&q=80",
+        caption: "Interior courtyard buffer with native tropical vegetation.",
+        material: "Basalt Paving / Shaded Glazing"
       },
       {
-        id: "img-03",
-        caption: "FIG 01.3 &mdash; WEATHERING STEEL ENTRY PORTAL AT SOLSTICE DUSK",
-        aspectRatio: "aspect-[4/5]",
-        gradient: "from-[#1e1c18] via-[#14120e] to-[#0a0806]",
-      },
+        url: "https://images.unsplash.com/photo-1600566753376-12c8ab7fb75b?auto=format&fit=crop&w=1200&q=80",
+        caption: "Tectonic detail: Recessed brass shadowline joint.",
+        material: "Oxidized Brass / Textural Stucco"
+      }
     ],
-    nextSlug: "kyoto-timber-research-lab",
+    specs: {
+      structure: "Post-Tensioned Monolithic Concrete & Earth Thermal Envelope",
+      facade: "Board-Formed Textured Wall Assembly & Double-Glazed Light Wells",
+      sustainability: "Passive Geothermal Massing & Rainwater Harvesting System",
+      acoustics: "Diffusive Micro-Perforated Timber Panels"
+    },
+    nextSlug: "kyoto-timber-research-lab"
   },
   {
     slug: "kyoto-timber-research-lab",
-    title: "Kyoto Timber Research Lab",
-    subtitle: "Interlocking Joinery & Forestry Archive",
-    typology: "Educational & Research",
-    location: "Kyoto, Japan",
-    year: "2024",
-    status: "Completed",
-    materials: "Cedar Joinery, Recycled Glass, Zinc Roofing",
+    title: "Tropical Timber & Material Lab",
+    subtitle: "Low-Carbon Prototype Atelier & Research Facility",
+    typology: "Research & Industrial",
+    year: "2023",
+    location: "Rivers State, Nigeria",
+    status: "Architectural Study / Monograph",
     area: "2,400 m²",
-    aspectRatio: "aspect-[4/3]",
-    editorialScale: "half",
-    heroGradient: "from-[#1a1917] via-[#111110] to-[#080808]",
-    description: "A glue-laminated cedar structural frame assembled entirely without metal fasteners, showcasing traditional interlocking joint joinery.",
-    longNarrative: "Constructed in collaboration with Kyoto master carpenters, the lab unites centuries-old wood joinery techniques with contemporary digital timber manufacturing.",
-    architecturalIdea: "Zero-metal tectonic integrity. Structural stability relies on interlocking Japanese Kanawa-tsugi timber joints engineered to absorb seismic movement.",
-    editorialInsight: "Wood joinery preserves centuries of material wisdom while defining contemporary carbon-neutral design.",
-    specifications: [
-      { label: "Primary Timber", value: "Sustainably Harvested Kitayama Cedar" },
-      { label: "Joint System", value: "Traditional Kanawa-tsugi Interlocking" },
-      { label: "Facade Glazing", value: "Double-Skin Low-E Diffuse Glass" },
-      { label: "Seismic System", value: "Friction-Damped Timber Joints" },
-    ],
+    leadArchitect: "Arthurtect Associates Design Atelier",
+    heroImage: "https://images.unsplash.com/photo-1600566753376-12c8ab7fb75b?auto=format&fit=crop&w=1600&q=80",
+    imageCaption: "Atmospheric study: Screened timber louver facade modulating airflow and equatorial sun.",
+    disclaimer: "Curatorial Monograph Note: Architectural parameters, drawings, and high-contrast spatial photography represent conceptual monograph research in our Port Harcourt studio.",
+    overview:
+      "A timber joinery research facility investigating regional hardwood tectonics, passive cross-ventilation, and demountable structural frames for sustainable tropical construction.",
+    architecturalIdea:
+      "Constructed entirely from sustainably sourced regional timber frames and expressively joined steel connections, the lab functions as a living prototype. Operable louvered screens wrap the perimeter, allowing continuous cross-ventilation breezes while deflecting driving rain.",
+    editorialInsight:
+      "Timber in humid environments requires precise detail articulation. By elevating structural timber footings on raised concrete piers, the building avoids ground moisture while framing elevated views of surrounding greenery.",
     galleryImages: [
       {
-        id: "img-01",
-        caption: "FIG 02.1 &mdash; CEDAR TIMBER FRAMEWORK & DOUBLE-SKIN GLASS FACADE",
-        aspectRatio: "aspect-[16/10]",
-        gradient: "from-[#1f1d18] via-[#15130e] to-[#090806]",
+        url: "https://images.unsplash.com/photo-1600566753376-12c8ab7fb75b?auto=format&fit=crop&w=1200&q=80",
+        caption: "Elevated timber colonnade with shaded courtyard overhangs.",
+        material: "Laminated Hardwood / Raised Concrete Piers"
       },
       {
-        id: "img-02",
-        caption: "FIG 02.2 &mdash; INTERLOCKING KANAWA-TSUGI TIMBER JOINT DETAIL",
-        aspectRatio: "aspect-[4/5]",
-        gradient: "from-[#1a1814] via-[#110f0b] to-[#070604]",
-      },
+        url: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80",
+        caption: "Interlocking timber joint mockups in research atelier.",
+        material: "Stainless Steel Hardware / Hardwood"
+      }
     ],
-    nextSlug: "thames-reach-monograph-studio",
+    specs: {
+      structure: "Glulaminated Regional Hardwood Timber Frame",
+      facade: "Operable Vertical Louver Batten Wall System",
+      sustainability: "100% Passive Natural Cross-Ventilation & Solar Roof Matrix",
+      acoustics: "Open-Air Courtyard Acoustic Buffer"
+    },
+    nextSlug: "thames-reach-monograph-studio"
   },
   {
     slug: "thames-reach-monograph-studio",
-    title: "Thames Reach Monograph Studio",
-    subtitle: "Riparian Live-Work Studio & Private Archive",
-    typology: "Private Residential",
-    location: "London, UK",
-    year: "2026",
-    status: "In Realization",
-    materials: "Cast Basalt, Fluted Bronze, Quarter-Sawn Oak",
+    title: "Trans-Amadi Spatial Monograph Residence",
+    subtitle: "Private Residential Sanctuary & Courtyard Studio",
+    typology: "Residential",
+    year: "2024",
+    location: "Port Harcourt, Nigeria",
+    status: "Architectural Study / Monograph",
     area: "920 m²",
-    aspectRatio: "aspect-[16/10]",
-    editorialScale: "half",
-    heroGradient: "from-[#141416] via-[#0d0d0f] to-[#08080a]",
-    description: "A riparian live-work studio for an art archivist featuring floating cantilevered concrete decks and light-diffusing bronze louver screens.",
-    longNarrative: "Hovering above the tidal Thames flood line, the studio balances heavy basalt foundations with delicate bronze louvers that control river light.",
-    architecturalIdea: "Dual tectonic posture: heavy monolithic stone anchor at ground level, surmounted by a delicate, light-filtering bronze cage above.",
-    editorialInsight: "Tidal water light requires continuous spatial moderation through textured bronze louvers.",
-    specifications: [
-      { label: "Foundation", value: "Basalt Micro-Piles & Cantilever Decks" },
-      { label: "Louver System", value: "Custom Fluted Anodized Bronze" },
-      { label: "Interior Joinery", value: "Fumed English Oak & Brushed Brass" },
-      { label: "Acoustic Barrier", value: "Triple Glazed Laminated Acoustic Glass" },
-    ],
+    leadArchitect: "Arthurtect Associates Design Atelier",
+    heroImage: "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1600&q=80",
+    imageCaption: "Atmospheric study: Shaded central water courtyard reflecting raw textured concrete walls.",
+    disclaimer: "Curatorial Monograph Note: Architectural parameters, drawings, and high-contrast spatial photography represent conceptual monograph research in our Port Harcourt studio.",
+    overview:
+      "A quiet residential sanctuary organized around a central reflecting pool and shaded courtyard arcade, providing an oasis of calm within the vibrant urban rhythm of Port Harcourt.",
+    architecturalIdea:
+      "An introspective floor plan turns its back on exterior street noise, opening entirely onto an interior landscaped courtyard. High concrete perimeter walls create a thermal mass barrier, while deep roof overhangs shield living quarters from direct tropical sunlight.",
+    editorialInsight:
+      "Privately scaled architecture achieves serenity through spatial sequence. The transition from intense street light through a narrow, dark entry portal into an open water courtyard creates an immediate atmospheric shift.",
     galleryImages: [
       {
-        id: "img-01",
-        caption: "FIG 03.1 &mdash; CANTILEVERED BASALT DECK OVERLOOKING RIVER THAMES TIDAL MUD",
-        aspectRatio: "aspect-[16/10]",
-        gradient: "from-[#16171a] via-[#0e0f12] to-[#070708]",
+        url: "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1200&q=80",
+        caption: "Water courtyard perimeter arcade and recessed glazing.",
+        material: "Rough-Cast Concrete / Granite Paving"
       },
       {
-        id: "img-02",
-        caption: "FIG 03.2 &mdash; FLUTED ANODIZED BRONZE LOUVER LIGHT REFRACTION AT HIGH TIDE",
-        aspectRatio: "aspect-[16/10]",
-        gradient: "from-[#1a1714] via-[#110f0b] to-[#070604]",
-      },
+        url: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80",
+        caption: "Living room facing shaded courtyard vegetation.",
+        material: "Teak Millwork / Polished Screed"
+      }
     ],
-    nextSlug: "engadin-light-observatory",
+    specs: {
+      structure: "Cast-in-Place Reinforced Concrete & Brick Masonry",
+      facade: "Perforated Masonry Screen & Anodized Aluminum Frames",
+      sustainability: "Courtyard Microclimate Evaporative Cooling",
+      acoustics: "Water Feature Acoustic Masking System"
+    },
+    nextSlug: "engadin-light-observatory"
   },
   {
     slug: "engadin-light-observatory",
-    title: "Engadin Light Observatory",
-    subtitle: "High-Altitude Solar Study & Celestial Courtyard",
-    typology: "Scientific & Civic",
-    location: "St. Moritz, Switzerland",
+    title: "Equatorial Light & Solar Observatory",
+    subtitle: "Spatial Research Pavilion & Sky Viewing Chamber",
+    typology: "Civic & Cultural",
     year: "2023",
-    status: "Completed",
-    materials: "Board-Formed Concrete, Anodized Aluminum",
-    area: "1,250 m²",
-    aspectRatio: "aspect-[16/9]",
-    editorialScale: "full",
-    heroGradient: "from-[#111317] via-[#0b0c0e] to-[#060608]",
-    description: "An alpine solar observatory engineered to frame winter solstice light alignments through precise ocular ceiling apertures.",
-    longNarrative: "Positioned at 2,100 meters above sea level, the observatory functions as both a scientific solar research facility and a public contemplative courtyard.",
-    architecturalIdea: "Framing solar duration. Every wall angle corresponds to solstice sun paths, making the building a functioning astronomical instrument.",
-    editorialInsight: "At high altitudes, light is an architectural material as tangible as concrete or steel.",
-    specifications: [
-      { label: "Concrete Finish", value: "White Quartz Board-Formed Aggregate" },
-      { label: "Oculus Aperture", value: "Motorized Double-Curved Glazing" },
-      { label: "Energy System", value: "Geothermal Heat Exchange Loop" },
-      { label: "Elevation", value: "2,140 Meters Above Sea Level" },
-    ],
+    location: "Rivers State, Nigeria",
+    status: "Architectural Study / Monograph",
+    area: "650 m²",
+    leadArchitect: "Arthurtect Associates Design Atelier",
+    heroImage: "https://images.unsplash.com/photo-1600566752355-35792bedcfea?auto=format&fit=crop&w=1600&q=80",
+    imageCaption: "Atmospheric study: Cylindrical light chamber framing zenith equatorial sky views.",
+    disclaimer: "Curatorial Monograph Note: Architectural parameters, drawings, and high-contrast spatial photography represent conceptual monograph research in our Port Harcourt studio.",
+    overview:
+      "A minimalist concrete observatory designed for studying celestial movement and sun angles near the equator. A singular oculus in the ceiling tracks solar movement across monolithic stone walls.",
+    architecturalIdea:
+      "Formed as a pure geometric cylinder, the observatory uses shadow geometry to mark seasonal solar solstices. Pure black basalt floors absorb excess reflection, focusing visitor perception entirely on the aperture above.",
+    editorialInsight:
+      "Equatorial light possesses a unique vertical intensity. By isolating a single sky view within a high monolithic volume, the observatory transforms intense sunlight into a moving architectural drawing.",
     galleryImages: [
       {
-        id: "img-01",
-        caption: "FIG 04.1 &mdash; OCULAR CEILING APERTURE FRAMING WINTER SOLSTICE ALIGNMENT",
-        aspectRatio: "aspect-[16/10]",
-        gradient: "from-[#14161a] via-[#0d0e12] to-[#060709]",
+        url: "https://images.unsplash.com/photo-1600566752355-35792bedcfea?auto=format&fit=crop&w=1200&q=80",
+        caption: "Oculus zenith opening casting sharp geometric solar beam.",
+        material: "Monolithic Pigmented Concrete"
       },
       {
-        id: "img-02",
-        caption: "FIG 04.2 &mdash; BOARD-FORMED WHITE QUARTZ CONCRETE COURTYARD WALLS",
-        aspectRatio: "aspect-[4/3]",
-        gradient: "from-[#181a1e] via-[#101115] to-[#07080a]",
-      },
+        url: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80",
+        caption: "Exterior concrete cylinder against tropical foliage backdrop.",
+        material: "Raw Concrete / Local Basalt"
+      }
     ],
-    nextSlug: "vervain-alpine-pavilion",
-  },
+    specs: {
+      structure: "Double-Walled Pigmented Monolithic Shell",
+      facade: "Seamless Concrete Wall Assembly with Precision Apertures",
+      sustainability: "Natural Chimney Stack Ventilation",
+      acoustics: "Elliptical Sound-Focusing Concrete Vault"
+    },
+    nextSlug: "vervain-alpine-pavilion"
+  }
 ];

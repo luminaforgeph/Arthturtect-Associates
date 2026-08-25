@@ -2,16 +2,16 @@ export const practiceData = {
   hero: {
     kicker: "PRACTICE & ETHOS",
     title: "Entering the Mind of the Practice",
-    subtitle: "Arthurtect Associates operates at the intersection of spatial restraint, material tactile truth, and contextual longevity.",
-    locations: ["London", "Zurich", "Tokyo"],
-    meta: "EST. PRACTICE MONOGRAPH • ARCHITECTURAL DISCIPLINE"
+    subtitle: "Arthurtect Associates operates at the intersection of spatial restraint, tropical daylight choreography, and material tactile truth in Port Harcourt, Nigeria.",
+    location: "Port Harcourt, Rivers State, Nigeria",
+    meta: "PORT HARCOURT ATELIER • ARCHITECTURAL DISCIPLINE"
   },
   statement: {
     heading: "An Editorial Manifesto on Spatial Integrity",
-    leadParagraph: "Architecture is not merely the enclosure of volume; it is the deliberate choreography of light, weight, and human presence over time.",
+    leadParagraph: "Architecture is not merely the enclosure of volume; it is the deliberate choreography of light, shadow, tropical climate, and human presence over time.",
     paragraphs: [
-      "Founded as an architectural and strategic spatial design practice, Arthurtect Associates approaches each project without preconception. We interrogate site geography, cultural memory, and structural tectonics to synthesize spaces that feel both inevitable and profoundly quiet.",
-      "Our work resists superficial trends and algorithmic repetition. By prioritizing physical material resonance over digital abstraction, we create enduring civic, cultural, and residential monographs designed to age with dignity."
+      "Based in Port Harcourt, Rivers State, Arthurtect Associates approaches each spatial endeavor without preconception. We interrogate site geography, regional climate dynamics, and structural tectonics to synthesize spaces that feel both inevitable and profoundly quiet.",
+      "Our work resists superficial trends and algorithmic repetition. By prioritizing physical material resonance—board-formed concrete, textured stone, shaded courtyards, and timber louvers—we create enduring spatial monographs designed to age with dignity."
     ]
   },
   philosophy: [
@@ -20,69 +20,69 @@ export const practiceData = {
       number: "01",
       title: "Volumetric Restraint",
       summary: "Space is defined as much by what is removed as by what is built.",
-      description: "We sculpt space through void and mass, allowing proportion and shadow to create interior serenity and exterior presence."
+      description: "We sculpt space through void and mass, allowing proportion and deep shadow to create interior serenity and exterior presence."
     },
     {
       id: "context",
       number: "02",
-      title: "Geographical Memory",
-      summary: "Architecture must listen to the land before speaking.",
-      description: "Every site carries geological, acoustic, and historical nuances. Our structures emerge as natural extensions of their topography."
+      title: "Geographical & Climatic Memory",
+      summary: "Architecture must listen to the land and atmosphere before speaking.",
+      description: "Every site carries geological, microclimatic, and acoustic nuances. Our structures respond to tropical sun patterns, rainfall, and regional context."
     },
     {
       id: "material",
       number: "03",
       title: "Tactile Authenticity",
       summary: "Honesty in raw, untreated, and enduring materials.",
-      description: "Board-formed concrete, hand-hewn alpine timber, oxidized copper, and unpolished stone—we select materials that patina beautifully over decades."
+      description: "Textured concrete, local aggregate, oxidized metals, and durable timber—we select materials that patina gracefully in humid tropical environments."
     },
     {
       id: "light",
       number: "04",
-      title: "Solar Choreography",
-      summary: "Light is treated as a primary structural element.",
-      description: "We orchestrate natural illumination across seasons and times of day to activate surfaces and dictate temporal pacing within the space."
+      title: "Solar & Shadow Choreography",
+      summary: "Light and deep shadow are primary structural elements.",
+      description: "We orchestrate natural illumination and shaded transitional arcades to buffer intense equatorial sun and activate interior surfaces."
     },
     {
       id: "human",
       number: "05",
       title: "Intimate Ergonomics",
-      summary: "Balancing monumental grandeur with human scale.",
-      description: "Whether designing a multi-thousand-meter cultural pavilion or a private sanctuary, every detail is calibrated to the tactile human touch."
+      summary: "Balancing spatial dignity with human scale.",
+      description: "Whether designing a civic institutional hall or a private residential sanctuary, every detail is calibrated to human touch and movement."
     },
     {
       id: "longevity",
       number: "06",
-      title: "Passive Permanence",
-      summary: "Low-carbon engineering and atmospheric resilience.",
-      description: "By integrating geothermal massing, natural cross-ventilation, and durable assemblies, our practice builds for generations."
+      title: "Passive Atmospheric Resilience",
+      summary: "Low-carbon massing and passive cross-ventilation.",
+      description: "By integrating thermal envelope massing, shaded courtyards, and natural airflow paths, our practice builds for enduring permanence."
     }
   ],
   methodology: [
     {
       step: "01",
-      name: "Dialogue & Interrogation",
-      focus: "Listening to site context, climate constraints, and human purpose before draft lines are drawn."
+      name: "Dialogue & Site Interrogation",
+      focus: "Listening to site topography, climatic constraints, and human purpose before draft lines are drawn."
     },
     {
       step: "02",
       name: "Typological Research",
-      focus: "Deconstructing traditional spatial tropes to uncover novel volumetric solutions."
+      focus: "Deconstructing traditional spatial tropes to uncover novel volumetric and climatic solutions."
     },
     {
       step: "03",
       name: "Tectonic Prototyping",
-      focus: "1:1 material mockups, acoustic testing, and structural physical modeling in our studio lab."
+      focus: "1:1 material mockups, sun angle analysis, and structural physical modeling in our atelier."
     },
     {
       step: "04",
       name: "Environmental Rigor",
-      focus: "Calibrating thermal envelope performance, solar gain, and embodied carbon footprints."
+      focus: "Calibrating thermal envelope performance, cross-ventilation breezes, and solar shading."
     },
     {
       step: "05",
       name: "Craft Execution",
-      focus: "Collaborating directly with master stonemasons, timber artisans, and structural engineers during assembly."
+      focus: "Collaborating directly with skilled master masons, steel fabricators, and structural engineers during assembly."
     }
   ],
   capabilities: [
@@ -92,7 +92,7 @@ export const practiceData = {
         "Civic & Cultural Institutions",
         "Residential Monographs & Sanctuaries",
         "Adaptive Reuse & Historic Tectonics",
-        "Alpine & Coastal Masterplanning"
+        "Tropical Regional Masterplanning"
       ]
     },
     {
@@ -109,47 +109,31 @@ export const practiceData = {
       items: [
         "Embodied Carbon Life-Cycle Audits",
         "Physical 1:1 Joint Mockups",
-        "Local Stone & Timber Provenance Research",
+        "Regional Aggregate & Timber Provenance Research",
         "Passive Solar & Thermal Mass Simulation"
       ]
     }
   ],
   people: {
-    note: "PRACTICE STRUCTURE & LEADERSHIP",
-    overview: "Arthurtect Associates is led by an international collective of architects, researchers, and spatial technologists operating across London, Zurich, and Tokyo.",
+    note: "PRACTICE STRUCTURE",
+    overview: "Arthurtect Associates Limited is an architectural and strategic spatial design practice based in Port Harcourt, Rivers State, Nigeria.",
     directors: [
       {
-        role: "Founding Partner / Design Principal",
-        studio: "London / Zurich",
-        focus: "Volumetric Strategy & Structural Tectonics"
+        role: "Principal Architect / Design Lead",
+        studio: "Port Harcourt Atelier",
+        focus: "Volumetric Strategy, Climatic Tectonics & Masterplanning"
       },
       {
-        role: "Partner / Director of Research & Materiality",
-        studio: "Zurich",
-        focus: "Low-Carbon Assemblies & Acoustic Monographs"
-      },
-      {
-        role: "Director of Spatial Experience",
-        studio: "Tokyo",
-        focus: "Solar Calibration & Interior Ergonomics"
+        role: "Director of Spatial Design & Materiality",
+        studio: "Port Harcourt Atelier",
+        focus: "Passive Environmental Assemblies & Interior Ergonomics"
       }
     ]
   },
-  studios: [
-    {
-      city: "London",
-      address: "74 Southwark Bridge Road, SE1 0AS",
-      focus: "Design Headquarters & Civic Projects"
-    },
-    {
-      city: "Zurich",
-      address: "Gotthardstrasse 26, 8002 Zürich",
-      focus: "Alpine Tectonics & Material Research Lab"
-    },
-    {
-      city: "Tokyo",
-      address: "5-7-1 Minami-Aoyama, Minato-ku, 107-0062",
-      focus: "Spatial Ergonomics & Craft Atelier"
-    }
-  ]
+  atelier: {
+    name: "Port Harcourt Atelier & Studio",
+    address: "41 Trans-Amadi Industrial Layout Road, Oginigba, Port Harcourt, Rivers State, Nigeria",
+    description: "Our primary studio operates in Port Harcourt, driving architectural research, client consultation, and spatial design development.",
+    email: "inquiries@arthurtect.com"
+  }
 };

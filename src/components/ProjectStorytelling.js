@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { Container } from "./Container";
 import { DisplayText, Heading, BodyText, MetaText } from "./Typography";
 import { MotionWrapper } from "./MotionWrapper";
@@ -10,7 +11,7 @@ export function ProjectHero({ project }) {
         {/* Navigation Breadcrumb Back Button */}
         <div className="mb-[var(--space-sm)]">
           <Link
-            href="/#works"
+            href="/works"
             className="inline-flex items-center gap-2 text-xs font-mono text-[var(--color-muted)] hover:text-[var(--color-paper)] transition-colors min-h-[44px] focus:outline-none focus:ring-1 focus:ring-[var(--color-paper)]"
           >
             <span>&larr;</span>
@@ -22,7 +23,7 @@ export function ProjectHero({ project }) {
         <MotionWrapper delay={100}>
           <div className="flex items-center gap-3 mb-[var(--space-xs)]">
             <span className="w-1.5 h-1.5 rounded-full bg-[var(--color-paper)] inline-block"></span>
-            <MetaText>{project.typology.toUpperCase()} &bull; {project.location.toUpperCase()}</MetaText>
+            <MetaText>{project.typology?.toUpperCase()} &bull; {project.location?.toUpperCase()}</MetaText>
           </div>
         </MotionWrapper>
 
@@ -38,19 +39,26 @@ export function ProjectHero({ project }) {
           </BodyText>
         </MotionWrapper>
 
-        {/* Primary Hero Architectural Canvas Frame */}
+        {/* Primary Hero Photography Frame */}
         <MotionWrapper delay={400}>
-          <div className={`w-full ${project.aspectRatio} relative overflow-hidden bg-[var(--color-surface)] border border-[var(--color-border)] shadow-2xl`}>
-            <div className={`absolute inset-0 bg-gradient-to-br ${project.heroGradient} opacity-95`} />
-            <div className="absolute inset-0 opacity-15 pointer-events-none bg-[radial-gradient(#8e8e8a_1px,transparent_1px)] [background-size:20px_20px]" />
+          <div className="w-full aspect-[16/9] relative overflow-hidden bg-[var(--color-surface)] border border-[var(--color-border)] shadow-2xl">
+            <Image
+              src={project.heroImage}
+              alt={project.title}
+              fill
+              priority
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 90vw, 1376px"
+              className="object-cover object-center grayscale contrast-110 opacity-90"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-[#0a0a0a] via-transparent to-transparent opacity-80" />
 
             <div className="absolute inset-0 p-4 sm:p-8 flex flex-col justify-between pointer-events-none">
               <div className="flex justify-between items-start">
                 <MetaText className="bg-[var(--color-void)]/80 backdrop-blur-xs px-2 py-1 border border-[var(--color-border)] text-[10px]">
                   PRIMARY VISUAL MONOGRAPH &bull; REF {project.year}
                 </MetaText>
-                <MetaText className="text-[var(--color-muted)] text-[10px]">
-                  STATUS: {project.status.toUpperCase()}
+                <MetaText className="text-[var(--color-paper)] text-[10px] bg-[var(--color-void)]/80 px-2 py-1 border border-[var(--color-border)]">
+                  STATUS: {project.status?.toUpperCase()}
                 </MetaText>
               </div>
 
@@ -60,11 +68,16 @@ export function ProjectHero({ project }) {
                   <span className="text-[10px]">GROSS AREA: {project.area}</span>
                 </div>
                 <MetaText className="text-[var(--color-paper-muted)]">
-                  TECTONICS: {project.materials}
+                  LEAD: {project.leadArchitect}
                 </MetaText>
               </div>
             </div>
           </div>
+          {project.disclaimer && (
+            <p className="text-[10px] font-mono text-[#8e8e8a] mt-2 italic">
+              {project.disclaimer}
+            </p>
+          )}
         </MotionWrapper>
       </Container>
     </section>
@@ -119,24 +132,26 @@ export function ProjectNarrative({ project }) {
           {/* Right Narrative & Technical Specs */}
           <div className="md:col-span-7 space-y-[var(--space-md)]">
             <div>
-              <MetaText className="block mb-2 text-[var(--color-muted)]">DESIGN NARRATIVE</MetaText>
+              <MetaText className="block mb-2 text-[var(--color-muted)]">DESIGN OVERVIEW</MetaText>
               <BodyText size="lg" className="leading-relaxed text-sm sm:text-base text-[var(--color-paper-muted)]">
-                {project.longNarrative}
+                {project.overview}
               </BodyText>
             </div>
 
             {/* Specifications Matrix */}
-            <div className="pt-[var(--space-sm)] border-t border-[var(--color-border)]">
-              <MetaText className="block mb-4">TECTONIC SPECIFICATIONS</MetaText>
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 font-mono text-xs">
-                {project.specifications.map((spec) => (
-                  <div key={spec.label} className="p-3 bg-[var(--color-surface)] border border-[var(--color-border)]">
-                    <span className="text-[10px] text-[var(--color-muted)] block uppercase mb-1">{spec.label}</span>
-                    <span className="text-[var(--color-paper)]">{spec.value}</span>
-                  </div>
-                ))}
+            {project.specs && (
+              <div className="pt-[var(--space-sm)] border-t border-[var(--color-border)]">
+                <MetaText className="block mb-4">TECTONIC SPECIFICATIONS</MetaText>
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 font-mono text-xs">
+                  {Object.entries(project.specs).map(([key, val]) => (
+                    <div key={key} className="p-3 bg-[var(--color-surface)] border border-[var(--color-border)]">
+                      <span className="text-[10px] text-[var(--color-muted)] block uppercase mb-1">{key}</span>
+                      <span className="text-[var(--color-paper)]">{val}</span>
+                    </div>
+                  ))}
+                </div>
               </div>
-            </div>
+            )}
           </div>
         </div>
       </Container>
@@ -160,26 +175,28 @@ export function MaterialGallery({ project }) {
           </MetaText>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-12 gap-[var(--space-md)]">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-[var(--space-md)]">
           {project.galleryImages.map((img, idx) => (
-            <div
-              key={img.id}
-              className={`md:col-span-12 ${
-                img.aspectRatio.includes("4/5") ? "md:col-span-6" : "md:col-span-12"
-              }`}
-            >
-              <MotionWrapper delay={150 + idx * 100}>
-                <div className="group border border-[var(--color-border)] hover:border-[var(--color-border-light)] transition-colors bg-[var(--color-void)] p-3">
-                  <div className={`w-full ${img.aspectRatio} relative overflow-hidden bg-[var(--color-surface)] border border-[var(--color-border)]`}>
-                    <div className={`absolute inset-0 bg-gradient-to-br ${img.gradient} opacity-95 transition-transform duration-700 group-hover:scale-105`} />
-                  </div>
-                  <div className="pt-3 px-1 flex justify-between items-center text-[10px] font-mono text-[var(--color-muted)]">
-                    <span>{img.caption}</span>
-                    <span>PLATE 0{idx + 1}</span>
-                  </div>
+            <MotionWrapper key={idx} delay={150 + idx * 100}>
+              <div className="group border border-[var(--color-border)] hover:border-[var(--color-border-light)] transition-colors bg-[var(--color-void)] p-3">
+                <div className="w-full aspect-[4/3] relative overflow-hidden bg-[var(--color-surface)] border border-[var(--color-border)]">
+                  <Image
+                    src={img.url}
+                    alt={img.caption}
+                    fill
+                    sizes="(max-width: 768px) 100vw, 600px"
+                    className="object-cover grayscale contrast-105 group-hover:scale-105 transition-transform duration-700"
+                  />
                 </div>
-              </MotionWrapper>
-            </div>
+                <div className="pt-3 px-1 flex justify-between items-center text-[10px] font-mono text-[var(--color-muted)]">
+                  <span>{img.caption}</span>
+                  <span>PLATE 0{idx + 1}</span>
+                </div>
+                <div className="text-[10px] font-mono text-[var(--color-paper-muted)] mt-1">
+                  MATERIAL: {img.material}
+                </div>
+              </div>
+            </MotionWrapper>
           ))}
         </div>
       </Container>
@@ -202,7 +219,7 @@ export function NextProjectNav({ nextProject }) {
             <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
               <div>
                 <MetaText className="text-[var(--color-muted)] text-[10px] block mb-1">
-                  NEXT MONOGRAPH &bull; {nextProject.typology.toUpperCase()}
+                  NEXT MONOGRAPH &bull; {nextProject.typology?.toUpperCase()}
                 </MetaText>
                 <Heading level={2} className="group-hover:text-[var(--color-paper-muted)] transition-colors">
                   {nextProject.title}

@@ -2,20 +2,20 @@ export const commissionData = {
   hero: {
     kicker: "COMMISSION & DIALOGUE",
     title: "Initiating a Project Conversation",
-    subtitle: "Arthurtect Associates engages selectively with clients and institutions seeking architectural clarity, material restraint, and enduring spatial value.",
-    meta: "DIRECT COMMISSION PORTAL • CONFIDENTIAL & SELECTIVE"
+    subtitle: "Arthurtect Associates engages selectively with clients and institutions seeking architectural clarity, tropical climatic intelligence, and enduring spatial value in Port Harcourt, Nigeria.",
+    meta: "PORT HARCOURT ATELIER • CONFIDENTIAL & SELECTIVE"
   },
   intents: [
     { id: "civic", label: "Civic & Cultural Institution" },
     { id: "residential", label: "Private Residential Sanctuary" },
     { id: "spatial", label: "Spatial & Interior Architecture" },
     { id: "adaptive", label: "Adaptive Reuse & Historic Tectonics" },
-    { id: "masterplanning", label: "Masterplanning & Land Strategy" },
+    { id: "masterplanning", label: "Tropical Regional Masterplanning" },
     { id: "research", label: "Material Research & Prototyping Lab" }
   ],
   formConfig: {
     heading: "Project Particulars",
-    subheading: "Please share the essential spatial parameters. Each inquiry is reviewed directly by our design principals."
+    subheading: "Please share essential spatial parameters. Inquiries are reviewed directly by our design team in Port Harcourt."
   },
   trust: {
     kicker: "WHAT HAPPENS NEXT",
@@ -24,12 +24,12 @@ export const commissionData = {
       {
         number: "01",
         title: "Principal Review",
-        description: "Your inquiry is directed to our partner team in London, Zurich, or Tokyo for spatial feasibility and schedule alignment."
+        description: "Your inquiry is directed to our design team in Port Harcourt for spatial feasibility, site context, and schedule alignment."
       },
       {
         number: "02",
         title: "Initial Consultation",
-        description: "We schedule an intimate, focused conversation—in studio or via secure video—to discuss site context, aspirations, and scope."
+        description: "We schedule an intimate, focused conversation—at our Port Harcourt atelier or via video—to discuss site context, aspirations, and scope."
       },
       {
         number: "03",
@@ -40,19 +40,9 @@ export const commissionData = {
   },
   studios: [
     {
-      city: "London",
-      address: "74 Southwark Bridge Road, SE1 0AS",
-      email: "london@arthurtect.com"
-    },
-    {
-      city: "Zurich",
-      address: "Gotthardstrasse 26, 8002 Zürich",
-      email: "zurich@arthurtect.com"
-    },
-    {
-      city: "Tokyo",
-      address: "5-7-1 Minami-Aoyama, Minato-ku, 107-0062",
-      email: "tokyo@arthurtect.com"
+      city: "Port Harcourt",
+      address: "41 Trans-Amadi Industrial Layout Road, Oginigba, Port Harcourt, Rivers State, Nigeria",
+      email: "inquiries@arthurtect.com"
     }
   ],
   closing: {

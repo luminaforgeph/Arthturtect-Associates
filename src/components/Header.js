@@ -3,8 +3,6 @@
 import React from "react";
 import Link from "next/link";
 import { Container } from "../components/Container";
-import { Heading, MetaText } from "../components/Typography";
-import { MotionWrapper } from "../components/MotionWrapper";
 
 export function Header() {
   const [menuOpen, setMenuOpen] = React.useState(false);
@@ -22,7 +20,7 @@ export function Header() {
               Arthurtect
             </span>
             <span className="text-xs font-mono tracking-[0.15em] text-[#8e8e8a] uppercase">
-              Associates
+              Associates &bull; Port Harcourt
             </span>
           </Link>
 
@@ -36,7 +34,7 @@ export function Header() {
             </Link>
             <Link
               href="/practice"
-              className="text-xs uppercase font-mono tracking-[0.2em] text-[#f5f5f2] hover:text-[#8e8e8a] transition-colors py-2 focus:outline-none focus:ring-1 focus:ring-[#f5f5f2]"
+              className="text-xs uppercase font-mono tracking-[0.2em] text-[#8e8e8a] hover:text-[#f5f5f2] transition-colors py-2 focus:outline-none focus:ring-1 focus:ring-[#f5f5f2]"
             >
               Practice
             </Link>

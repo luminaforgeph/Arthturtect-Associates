@@ -30,13 +30,11 @@ export function PracticeHero() {
           </p>
 
           <div className="pt-6 border-t border-[#262624]/60 flex flex-wrap items-center gap-y-2 gap-x-8 text-xs font-mono tracking-widest text-[#8e8e8a] uppercase">
-            <span className="text-[#f5f5f2]/60">STUDIO LOCATIONS:</span>
-            {hero.locations.map((loc) => (
-              <span key={loc} className="flex items-center gap-2">
-                <span className="w-1.5 h-1.5 rounded-full bg-[#f5f5f2]/40" />
-                {loc}
-              </span>
-            ))}
+            <span className="text-[#f5f5f2]/60">PRIMARY ATELIER LOCATION:</span>
+            <span className="flex items-center gap-2 text-[#f5f5f2]">
+              <span className="w-1.5 h-1.5 rounded-full bg-[#f5f5f2]" />
+              {hero.location}
+            </span>
           </div>
         </MotionWrapper>
       </Container>
@@ -94,7 +92,7 @@ export function PhilosophySection() {
                 02 / ARCHITECTURAL PHILOSOPHY
               </span>
               <Heading level={2} className="text-2xl sm:text-4xl font-light text-[#f5f5f2]">
-                Principles of Spatial Restraint
+                Principles of Spatial & Climatic Restraint
               </Heading>
             </div>
             <span className="text-xs font-mono text-[#8e8e8a] mt-2 sm:mt-0">
@@ -250,7 +248,7 @@ export function CapabilitiesSection() {
 }
 
 export function PeoplePracticeSection() {
-  const { people, studios } = practiceData;
+  const { people, atelier } = practiceData;
 
   return (
     <section className="py-20 md:py-32 border-b border-[#262624] bg-[#0a0a0a]">
@@ -258,10 +256,10 @@ export function PeoplePracticeSection() {
         <MotionWrapper animation="fadeUp" delay={0.1}>
           <div className="mb-12 md:mb-16 pb-6 border-b border-[#262624]">
             <span className="text-xs font-mono tracking-widest uppercase text-[#8e8e8a] mb-2 block">
-              05 / PEOPLE & STUDIOS
+              05 / PRACTICE STRUCTURE & ATELIER
             </span>
             <Heading level={2} className="text-2xl sm:text-4xl font-light text-[#f5f5f2]">
-              Leadership & Studio Network
+              Port Harcourt Atelier & Leadership
             </Heading>
             <p className="text-xs sm:text-sm text-[#8e8e8a] font-mono mt-3">
               {people.overview}
@@ -292,27 +290,30 @@ export function PeoplePracticeSection() {
             ))}
           </div>
 
-          {/* Studios Grid */}
+          {/* Studio Atelier Address */}
           <div className="lg:col-span-5 space-y-6">
             <span className="text-xs font-mono tracking-widest uppercase text-[#8e8e8a] block mb-4">
-              STUDIO ATELIERS
+              PRIMARY STUDIO LOCATION
             </span>
-            {studios.map((st, idx) => (
-              <MotionWrapper key={st.city} animation="fadeUp" delay={0.15 * (idx + 1)}>
-                <div className="p-6 bg-[#141414] border border-[#262624] space-y-2">
-                  <div className="flex items-center justify-between">
+            <MotionWrapper animation="fadeUp" delay={0.2}>
+              <div className="p-6 bg-[#141414] border border-[#262624] space-y-3">
+                <div className="flex items-center justify-between">
                     <Heading level={3} className="text-base sm:text-lg font-light text-[#f5f5f2]">
-                      {st.city} Studio
+                    {atelier.name}
                     </Heading>
-                    <span className="w-1.5 h-1.5 rounded-full bg-[#f5f5f2]" />
-                  </div>
-                  <p className="text-xs font-mono text-[#8e8e8a]">{st.address}</p>
-                  <p className="text-xs text-[#8e8e8a] font-light pt-2 border-t border-[#262624]/60">
-                    {st.focus}
-                  </p>
+                  <span className="w-2 h-2 rounded-full bg-[#f5f5f2]" />
                 </div>
-              </MotionWrapper>
-            ))}
+                <p className="text-xs font-mono text-[#8e8e8a] leading-relaxed">{atelier.address}</p>
+                <p className="text-xs text-[#8e8e8a] font-light pt-3 border-t border-[#262624]/60">
+                  {atelier.description}
+                </p>
+                <div className="pt-2">
+                  <a href={`mailto:${atelier.email}`} className="text-xs font-mono text-[#f5f5f2] hover:text-[#8e8e8a] transition-colors uppercase">
+                    {atelier.email}
+                  </a>
+                </div>
+              </div>
+            </MotionWrapper>
           </div>
         </div>
       </Container>
@@ -334,11 +335,11 @@ export function PracticeContinuation() {
               level={2}
               className="text-2xl sm:text-4xl font-light text-[#f5f5f2] leading-tight"
             >
-              Explore our architectural monographs & spatial works
+              Explore our spatial monographs & architectural studies
             </Heading>
 
             <p className="text-xs sm:text-sm text-[#8e8e8a] font-light max-w-xl mx-auto">
-              Examine our executed projects across civic, cultural, alpine, and research typologies.
+              Examine our conceptual monographs across civic, cultural, residential, and research typologies.
             </p>
 
             <div className="pt-4">
@@ -346,7 +347,7 @@ export function PracticeContinuation() {
                 href="/works"
                 className="inline-flex items-center justify-center min-h-[48px] px-8 bg-[#f5f5f2] text-[#0a0a0a] text-xs font-mono uppercase font-semibold tracking-wider hover:bg-[#8e8e8a] transition-colors"
               >
-                VIEW MONOGRAPH INDEX →
+                VIEW MONOGRAPH INDEX &rarr;
               </Link>
             </div>
           </div>

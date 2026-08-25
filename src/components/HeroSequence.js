@@ -37,17 +37,17 @@ export function HeroSequence() {
                   FIG 01.0 &mdash; TECTONIC ASSEMBLY
                 </MetaText>
                 <MetaText className="text-[var(--color-muted)]">
-                  51.5074° N, 0.1278° W
+                  4.8156° N, 7.0498° E
                 </MetaText>
               </div>
 
               <div className="border-t border-[var(--color-border)]/50 pt-3 flex flex-col sm:flex-row justify-between items-start sm:items-end gap-2">
                 <div>
                   <MetaText className="block text-[var(--color-paper)]">
-                    ALPS CULMINATION MONOLITH
+                    PORT HARCOURT TECTONIC STUDY
                   </MetaText>
                   <span className="text-[10px] font-mono text-[var(--color-muted)]">
-                    MATERIAL: CAST BASALT & CONCRETE
+                    MATERIAL: TEXTURED CONCRETE & TIMBER
                   </span>
                 </div>
                 <MetaText className="text-[var(--color-paper-muted)] font-mono">
@@ -63,17 +63,17 @@ export function HeroSequence() {
           <div className="grid grid-cols-1 md:grid-cols-12 gap-[var(--space-md)] pt-[var(--space-xs)] items-baseline">
             <div className="md:col-span-8">
               <BodyText size="lg" className="max-w-2xl leading-relaxed">
-                Arthurtect Associates operates at the intersection of architectural discipline, structural honesty, and spatial storytelling. We build environments that respond to geographic context and human presence.
+                Arthurtect Associates operates at the intersection of architectural discipline, structural honesty, and spatial storytelling in Port Harcourt, Rivers State, Nigeria. We build environments that respond to tropical context and human presence.
               </BodyText>
             </div>
             <div className="md:col-span-4 flex flex-col gap-2 font-mono text-xs text-[var(--color-muted)] border-t md:border-t-0 md:border-l border-[var(--color-border)] pt-4 md:pt-0 md:pl-6">
               <div className="flex justify-between">
-                <span>PRACTICE EST.</span>
-                <span className="text-[var(--color-paper)]">2018</span>
+                <span>ATELIER</span>
+                <span className="text-[var(--color-paper)]">PORT HARCOURT</span>
               </div>
               <div className="flex justify-between">
-                <span>LOCATIONS</span>
-                <span className="text-[var(--color-paper)]">LDN / ZRH / TYO</span>
+                <span>REGION</span>
+                <span className="text-[var(--color-paper)]">RIVERS STATE, NIGERIA</span>
               </div>
               <div className="flex justify-between">
                 <span>TYPOLOGIES</span>

@@ -51,13 +51,13 @@ export default async function ProjectDetailPage({ params }) {
       <footer className="border-t border-[var(--color-border)] py-[var(--space-md)] bg-[var(--color-void)]">
         <Container size="2xl">
           <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-[var(--space-xs)] text-xs text-[var(--color-muted)] font-mono">
-            <div>&copy; {new Date().getFullYear()} Arthurtect Associates. All rights reserved.</div>
+            <div>&copy; {new Date().getFullYear()} Arthurtect Associates Limited. Port Harcourt, Rivers State, Nigeria.</div>
             <div className="flex gap-4 tracking-wider uppercase">
-              <span>London</span>
+              <span>Port Harcourt</span>
               <span>&bull;</span>
-              <span>Zurich</span>
+              <span>Rivers State</span>
               <span>&bull;</span>
-              <span>Tokyo</span>
+              <span>Nigeria</span>
             </div>
           </div>
         </Container>
