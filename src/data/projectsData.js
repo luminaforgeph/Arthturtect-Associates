@@ -14,11 +14,35 @@ export const projectsData = [
     heroGradient: "from-[#171715] via-[#101010] to-[#0a0a09]",
     description: "A subterranean cultural hall carved directly into the Valais granite cliffside, utilizing natural thermal mass and acoustic reverberation.",
     longNarrative: "The Vervain Alpine Pavilion responds to the extreme topography of the Vals valley. Carved into granite, the structure maintains thermal balance throughout harsh Alpine winters while offering uninhibited views of the valley floor.",
+    architecturalIdea: "The fundamental concept centers on 'excavated acoustic volume.' Rather than erecting a building onto the landscape, space was hollowed out from the living bedrock, creating a natural acoustic shell for chamber performances.",
+    editorialInsight: "Subterranean architecture eliminates the distinction between structural enclosure and geographic terrain.",
     specifications: [
-      { label: "Structural Framing", value: "Monolithic Cast Concrete & Stone" },
+      { label: "Structural Framing", value: "Monolithic Cast Concrete & Bedrock Excavation" },
       { label: "Acoustic Insulation", value: "Charred Larch Panels & Air Cavities" },
       { label: "Thermal Rating", value: "Minergie-P Alpine Standard" },
+      { label: "Acoustic Reverberation", value: "1.85 Seconds (Chamber Music Calibration)" },
     ],
+    galleryImages: [
+      {
+        id: "img-01",
+        caption: "FIG 01.1 &mdash; EXCAVATED AUDITORIUM & GRANITE ACOUSTIC SHELL",
+        aspectRatio: "aspect-[16/10]",
+        gradient: "from-[#1c1b18] via-[#121210] to-[#080807]",
+      },
+      {
+        id: "img-02",
+        caption: "FIG 01.2 &mdash; CHARRED LARCH ACOUSTIC JOINERY & AIR CAVITY DETAIL",
+        aspectRatio: "aspect-[4/5]",
+        gradient: "from-[#181715] via-[#11100e] to-[#070706]",
+      },
+      {
+        id: "img-03",
+        caption: "FIG 01.3 &mdash; WEATHERING STEEL ENTRY PORTAL AT SOLSTICE DUSK",
+        aspectRatio: "aspect-[4/5]",
+        gradient: "from-[#1e1c18] via-[#14120e] to-[#0a0806]",
+      },
+    ],
+    nextSlug: "kyoto-timber-research-lab",
   },
   {
     slug: "kyoto-timber-research-lab",
@@ -35,11 +59,29 @@ export const projectsData = [
     heroGradient: "from-[#1a1917] via-[#111110] to-[#080808]",
     description: "A glue-laminated cedar structural frame assembled entirely without metal fasteners, showcasing traditional interlocking joint joinery.",
     longNarrative: "Constructed in collaboration with Kyoto master carpenters, the lab unites centuries-old wood joinery techniques with contemporary digital timber manufacturing.",
+    architecturalIdea: "Zero-metal tectonic integrity. Structural stability relies on interlocking Japanese Kanawa-tsugi timber joints engineered to absorb seismic movement.",
+    editorialInsight: "Wood joinery preserves centuries of material wisdom while defining contemporary carbon-neutral design.",
     specifications: [
       { label: "Primary Timber", value: "Sustainably Harvested Kitayama Cedar" },
       { label: "Joint System", value: "Traditional Kanawa-tsugi Interlocking" },
       { label: "Facade Glazing", value: "Double-Skin Low-E Diffuse Glass" },
+      { label: "Seismic System", value: "Friction-Damped Timber Joints" },
     ],
+    galleryImages: [
+      {
+        id: "img-01",
+        caption: "FIG 02.1 &mdash; CEDAR TIMBER FRAMEWORK & DOUBLE-SKIN GLASS FACADE",
+        aspectRatio: "aspect-[16/10]",
+        gradient: "from-[#1f1d18] via-[#15130e] to-[#090806]",
+      },
+      {
+        id: "img-02",
+        caption: "FIG 02.2 &mdash; INTERLOCKING KANAWA-TSUGI TIMBER JOINT DETAIL",
+        aspectRatio: "aspect-[4/5]",
+        gradient: "from-[#1a1814] via-[#110f0b] to-[#070604]",
+      },
+    ],
+    nextSlug: "thames-reach-monograph-studio",
   },
   {
     slug: "thames-reach-monograph-studio",
@@ -56,11 +98,29 @@ export const projectsData = [
     heroGradient: "from-[#141416] via-[#0d0d0f] to-[#08080a]",
     description: "A riparian live-work studio for an art archivist featuring floating cantilevered concrete decks and light-diffusing bronze louver screens.",
     longNarrative: "Hovering above the tidal Thames flood line, the studio balances heavy basalt foundations with delicate bronze louvers that control river light.",
+    architecturalIdea: "Dual tectonic posture: heavy monolithic stone anchor at ground level, surmounted by a delicate, light-filtering bronze cage above.",
+    editorialInsight: "Tidal water light requires continuous spatial moderation through textured bronze louvers.",
     specifications: [
       { label: "Foundation", value: "Basalt Micro-Piles & Cantilever Decks" },
       { label: "Louver System", value: "Custom Fluted Anodized Bronze" },
       { label: "Interior Joinery", value: "Fumed English Oak & Brushed Brass" },
+      { label: "Acoustic Barrier", value: "Triple Glazed Laminated Acoustic Glass" },
     ],
+    galleryImages: [
+      {
+        id: "img-01",
+        caption: "FIG 03.1 &mdash; CANTILEVERED BASALT DECK OVERLOOKING RIVER THAMES TIDAL MUD",
+        aspectRatio: "aspect-[16/10]",
+        gradient: "from-[#16171a] via-[#0e0f12] to-[#070708]",
+      },
+      {
+        id: "img-02",
+        caption: "FIG 03.2 &mdash; FLUTED ANODIZED BRONZE LOUVER LIGHT REFRACTION AT HIGH TIDE",
+        aspectRatio: "aspect-[16/10]",
+        gradient: "from-[#1a1714] via-[#110f0b] to-[#070604]",
+      },
+    ],
+    nextSlug: "engadin-light-observatory",
   },
   {
     slug: "engadin-light-observatory",
@@ -77,10 +137,28 @@ export const projectsData = [
     heroGradient: "from-[#111317] via-[#0b0c0e] to-[#060608]",
     description: "An alpine solar observatory engineered to frame winter solstice light alignments through precise ocular ceiling apertures.",
     longNarrative: "Positioned at 2,100 meters above sea level, the observatory functions as both a scientific solar research facility and a public contemplative courtyard.",
+    architecturalIdea: "Framing solar duration. Every wall angle corresponds to solstice sun paths, making the building a functioning astronomical instrument.",
+    editorialInsight: "At high altitudes, light is an architectural material as tangible as concrete or steel.",
     specifications: [
       { label: "Concrete Finish", value: "White Quartz Board-Formed Aggregate" },
       { label: "Oculus Aperture", value: "Motorized Double-Curved Glazing" },
       { label: "Energy System", value: "Geothermal Heat Exchange Loop" },
+      { label: "Elevation", value: "2,140 Meters Above Sea Level" },
     ],
+    galleryImages: [
+      {
+        id: "img-01",
+        caption: "FIG 04.1 &mdash; OCULAR CEILING APERTURE FRAMING WINTER SOLSTICE ALIGNMENT",
+        aspectRatio: "aspect-[16/10]",
+        gradient: "from-[#14161a] via-[#0d0e12] to-[#060709]",
+      },
+      {
+        id: "img-02",
+        caption: "FIG 04.2 &mdash; BOARD-FORMED WHITE QUARTZ CONCRETE COURTYARD WALLS",
+        aspectRatio: "aspect-[4/3]",
+        gradient: "from-[#181a1e] via-[#101115] to-[#07080a]",
+      },
+    ],
+    nextSlug: "vervain-alpine-pavilion",
   },
 ];
