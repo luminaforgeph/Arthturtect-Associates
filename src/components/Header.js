@@ -46,12 +46,12 @@ export function Header() {
             >
               Capabilities
             </Link>
-            <a
-              href="#contact"
+            <Link
+              href="/commission"
               className="text-xs uppercase font-mono tracking-[0.2em] text-[#8e8e8a] hover:text-[#f5f5f2] transition-colors py-2 focus:outline-none focus:ring-1 focus:ring-[#f5f5f2]"
             >
-              Contact
-            </a>
+              Commission
+            </Link>
           </nav>
 
           {/* Mobile Menu Trigger Button (Min 44px Touch Target) */}
@@ -91,13 +91,13 @@ export function Header() {
             >
               03 — Capabilities
             </Link>
-            <a
-              href="#contact"
+            <Link
+              href="/commission"
               onClick={() => setMenuOpen(false)}
               className="py-2 text-sm font-mono uppercase tracking-[0.2em] text-[#f5f5f2] hover:text-[#8e8e8a] focus:outline-none min-h-[44px] flex items-center"
             >
-              04 — Contact
-            </a>
+              04 — Commission
+            </Link>
           </nav>
         )}
       </Container>
